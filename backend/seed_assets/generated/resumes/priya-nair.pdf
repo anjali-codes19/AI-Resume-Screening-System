@@ -1,0 +1,61 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1249 >>
+stream
+BT
+/F1 11 Tf
+50 770 Td
+14 TL
+(Priya Nair) Tj
+T* (Data Scientist) Tj
+T* (Singapore) Tj
+T* () Tj
+T* (Professional Summary) Tj
+T* (Data scientist focused on experimentation, product analytics, and recommendation systems with 5 ) Tj
+T* () Tj
+T* (Skills) Tj
+T* (Python, SQL, Machine Learning, scikit-learn, Pandas, NumPy, A/B Testing, Tableau, Looker, Commun) Tj
+T* () Tj
+T* (Experience) Tj
+T* (Senior Data Scientist | SignalPath | 2023 - Present) Tj
+T* (- Built propensity models that improved enterprise trial conversion by 14%.) Tj
+T* (- Published weekly insights for GTM leaders and product directors using SQL, Python, and Looker.) Tj
+T* (Data Scientist | Metric Hive | 2021 - 2023) Tj
+T* (- Ran A/B testing programs across onboarding and lifecycle messaging.) Tj
+T* (- Created reusable feature engineering templates that accelerated analyst delivery.) Tj
+T* () Tj
+T* (Projects) Tj
+T* (Candidate Funnel Forecaster \(Python, scikit-learn, Tableau\)) Tj
+T* (- Forecasted weekly applicant conversion and informed hiring capacity planning.) Tj
+T* () Tj
+T* (Education) Tj
+T* (Master of Science in Business Analytics, National University of Singapore) Tj
+T* (Bachelor of Technology in Information Technology, Government Engineering College Thrissur) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1612
+%%EOF

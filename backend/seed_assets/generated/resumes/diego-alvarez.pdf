@@ -1,0 +1,60 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1158 >>
+stream
+BT
+/F1 11 Tf
+50 770 Td
+14 TL
+(Diego Alvarez) Tj
+T* (Platform Engineer) Tj
+T* (Madrid, Spain) Tj
+T* () Tj
+T* (Professional Summary) Tj
+T* (Platform engineer with 6 years of experience scaling backend services, observability, and contai) Tj
+T* () Tj
+T* (Skills) Tj
+T* (Python, Docker, Kubernetes, AWS, PostgreSQL, Redis, CI/CD, FastAPI, System Design, Go) Tj
+T* () Tj
+T* (Experience) Tj
+T* (Platform Engineer | Northstar Cloud | 2022 - Present) Tj
+T* (- Reduced deployment times from 28 minutes to 9 minutes with self service CI/CD templates.) Tj
+T* (- Containerized FastAPI services for 15 teams and improved release confidence.) Tj
+T* (Backend Engineer | ScaleForge | 2020 - 2022) Tj
+T* (- Built resilient scheduling services in Python and Go backed by PostgreSQL and Redis.) Tj
+T* (- Improved API response times by 31% through indexing and caching strategies.) Tj
+T* () Tj
+T* (Projects) Tj
+T* (Ops Health Monitor \(Go, Python, Docker, Grafana\)) Tj
+T* (- Created reliability scorecards for engineering leaders and reduced incident MTTR.) Tj
+T* () Tj
+T* (Education) Tj
+T* (Bachelor of Science in Computer Engineering, Universidad Politecnica de Madrid) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1521
+%%EOF

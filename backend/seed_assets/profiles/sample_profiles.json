@@ -1,0 +1,171 @@
+[
+  {
+    "full_name": "Aanya Patel",
+    "email": "aanya.patel@example.com",
+    "headline": "Senior Machine Learning Engineer",
+    "location": "Bengaluru, India",
+    "summary": "Machine learning engineer with 7 years of experience building NLP systems, recruiter tooling, and production APIs for global SaaS teams.",
+    "skills": ["Python", "FastAPI", "Machine Learning", "NLP", "scikit-learn", "spaCy", "PostgreSQL", "Docker", "AWS", "React", "TypeScript"],
+    "experience": [
+      {
+        "role": "Senior Machine Learning Engineer",
+        "company": "TalentGrid",
+        "start": "2022",
+        "end": "Present",
+        "highlights": [
+          "Launched resume ranking pipelines that reduced recruiter review time by 43% across 120k applicants.",
+          "Built FastAPI microservices for parsing and ATS scoring with 99.9% uptime.",
+          "Led a four engineer squad and introduced structured model evaluation workflows."
+        ]
+      },
+      {
+        "role": "Machine Learning Engineer",
+        "company": "PeopleIQ",
+        "start": "2019",
+        "end": "2022",
+        "highlights": [
+          "Shipped semantic search for candidate discovery using sentence embeddings and PostgreSQL.",
+          "Improved extraction accuracy by 18% through custom spaCy pipelines and data augmentation."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Hiring Copilot",
+        "stack": "FastAPI, React, PostgreSQL, Docker",
+        "impact": "Built an internal recruiter cockpit with AI suggestions and recruiter scorecards for 60 users."
+      },
+      {
+        "name": "Resume Skill Graph",
+        "stack": "Python, NetworkX, spaCy",
+        "impact": "Mapped candidate capabilities across 15 business units to support internal mobility planning."
+      }
+    ],
+    "education": [
+      "Master of Technology in Data Science, Indian Institute of Technology Madras",
+      "Bachelor of Engineering in Computer Science, BMS College of Engineering"
+    ]
+  },
+  {
+    "full_name": "Marcus Reed",
+    "email": "marcus.reed@example.com",
+    "headline": "Staff Frontend Engineer",
+    "location": "Austin, United States",
+    "summary": "Frontend leader with 8 years of experience building enterprise dashboards, workflow tools, and design systems for HR and fintech products.",
+    "skills": ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Recharts", "JavaScript", "HTML", "CSS", "GraphQL", "Figma", "Leadership"],
+    "experience": [
+      {
+        "role": "Staff Frontend Engineer",
+        "company": "LoopWorks",
+        "start": "2021",
+        "end": "Present",
+        "highlights": [
+          "Designed dashboard frameworks used by 300+ recruiters and hiring managers daily.",
+          "Introduced component quality gates that cut visual regressions by 55%.",
+          "Partnered with product and design to rebuild candidate review flows in React and TypeScript."
+        ]
+      },
+      {
+        "role": "Senior UI Engineer",
+        "company": "Helio HR",
+        "start": "2018",
+        "end": "2021",
+        "highlights": [
+          "Implemented recruiter analytics charts in Recharts and shipped dark mode across the talent suite.",
+          "Mentored five engineers on accessibility, performance, and animation systems."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Talent Operations Console",
+        "stack": "React, TailwindCSS, Recharts",
+        "impact": "Created an executive analytics cockpit that surfaced funnel bottlenecks and reduced churn risk."
+      }
+    ],
+    "education": [
+      "Bachelor of Science in Software Engineering, Texas State University"
+    ]
+  },
+  {
+    "full_name": "Priya Nair",
+    "email": "priya.nair@example.com",
+    "headline": "Data Scientist",
+    "location": "Singapore",
+    "summary": "Data scientist focused on experimentation, product analytics, and recommendation systems with 5 years of experience supporting B2B SaaS growth teams.",
+    "skills": ["Python", "SQL", "Machine Learning", "scikit-learn", "Pandas", "NumPy", "A/B Testing", "Tableau", "Looker", "Communication"],
+    "experience": [
+      {
+        "role": "Senior Data Scientist",
+        "company": "SignalPath",
+        "start": "2023",
+        "end": "Present",
+        "highlights": [
+          "Built propensity models that improved enterprise trial conversion by 14%.",
+          "Published weekly insights for GTM leaders and product directors using SQL, Python, and Looker."
+        ]
+      },
+      {
+        "role": "Data Scientist",
+        "company": "Metric Hive",
+        "start": "2021",
+        "end": "2023",
+        "highlights": [
+          "Ran A/B testing programs across onboarding and lifecycle messaging.",
+          "Created reusable feature engineering templates that accelerated analyst delivery."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Candidate Funnel Forecaster",
+        "stack": "Python, scikit-learn, Tableau",
+        "impact": "Forecasted weekly applicant conversion and informed hiring capacity planning."
+      }
+    ],
+    "education": [
+      "Master of Science in Business Analytics, National University of Singapore",
+      "Bachelor of Technology in Information Technology, Government Engineering College Thrissur"
+    ]
+  },
+  {
+    "full_name": "Diego Alvarez",
+    "email": "diego.alvarez@example.com",
+    "headline": "Platform Engineer",
+    "location": "Madrid, Spain",
+    "summary": "Platform engineer with 6 years of experience scaling backend services, observability, and container platforms for high growth products.",
+    "skills": ["Python", "Docker", "Kubernetes", "AWS", "PostgreSQL", "Redis", "CI/CD", "FastAPI", "System Design", "Go"],
+    "experience": [
+      {
+        "role": "Platform Engineer",
+        "company": "Northstar Cloud",
+        "start": "2022",
+        "end": "Present",
+        "highlights": [
+          "Reduced deployment times from 28 minutes to 9 minutes with self service CI/CD templates.",
+          "Containerized FastAPI services for 15 teams and improved release confidence."
+        ]
+      },
+      {
+        "role": "Backend Engineer",
+        "company": "ScaleForge",
+        "start": "2020",
+        "end": "2022",
+        "highlights": [
+          "Built resilient scheduling services in Python and Go backed by PostgreSQL and Redis.",
+          "Improved API response times by 31% through indexing and caching strategies."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Ops Health Monitor",
+        "stack": "Go, Python, Docker, Grafana",
+        "impact": "Created reliability scorecards for engineering leaders and reduced incident MTTR."
+      }
+    ],
+    "education": [
+      "Bachelor of Science in Computer Engineering, Universidad Politecnica de Madrid"
+    ]
+  }
+]

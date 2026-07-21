@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Senior AI Platform Engineer",
+    "department": "Engineering",
+    "location": "Remote",
+    "employment_type": "Full-time",
+    "summary": "Own the AI screening platform used by enterprise recruiters. Build resilient APIs, ranking models, analytics, and developer workflows.",
+    "requirements": [
+      "5+ years of experience building backend or machine learning products.",
+      "Strong Python, FastAPI, SQL, Docker, and PostgreSQL experience.",
+      "Hands-on NLP, scikit-learn, spaCy, or semantic search experience.",
+      "Experience deploying cloud services on AWS and collaborating with frontend teams using React and TypeScript."
+    ],
+    "responsibilities": [
+      "Design candidate ranking services, ATS scoring pipelines, and recruiter analytics APIs.",
+      "Partner with product, design, and recruiting stakeholders to improve hiring workflows.",
+      "Own observability, documentation, testing, and deployment for the screening stack."
+    ]
+  },
+  {
+    "title": "Recruiter Analytics Frontend Lead",
+    "department": "Product Engineering",
+    "location": "Hybrid - Austin",
+    "employment_type": "Full-time",
+    "summary": "Build the flagship recruiter cockpit for analytics, reporting, and candidate review workflows across enterprise hiring teams.",
+    "requirements": [
+      "6+ years of frontend engineering experience with React and TypeScript.",
+      "Deep experience with TailwindCSS, enterprise dashboard design, and charting libraries such as Recharts.",
+      "Comfort collaborating with backend teams, product designers, and end users in a fast moving environment."
+    ],
+    "responsibilities": [
+      "Lead architecture for recruiter dashboards, theming, and interaction design systems.",
+      "Translate hiring analytics into actionable charts, filters, and drill-down experiences.",
+      "Coach other engineers and keep accessibility, performance, and responsiveness at a high bar."
+    ]
+  }
+]

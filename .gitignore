@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.coverage
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+.env.*
+node_modules/
+dist/
+coverage/
+backend/uploads/
+backend/tests/test_resume_screening.db
+frontend/.vite/
+postgres_data/

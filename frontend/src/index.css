@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: 36 33% 97%;
+  --foreground: 224 34% 14%;
+  --muted: 210 24% 93%;
+  --muted-foreground: 220 14% 42%;
+  --surface: 0 0% 100%;
+  --surface-strong: 28 50% 98%;
+  --border: 214 28% 86%;
+  --accent: 196 90% 42%;
+  --accent-2: 28 88% 51%;
+  --success: 161 79% 33%;
+  --warning: 32 92% 50%;
+  --danger: 5 72% 53%;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: 224 34% 10%;
+  --foreground: 210 40% 96%;
+  --muted: 223 30% 18%;
+  --muted-foreground: 216 16% 72%;
+  --surface: 222 30% 14%;
+  --surface-strong: 225 26% 12%;
+  --border: 223 18% 24%;
+  --accent: 193 92% 61%;
+  --accent-2: 33 95% 58%;
+  --success: 161 84% 57%;
+  --warning: 40 96% 64%;
+  --danger: 6 93% 68%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-background font-sans text-foreground antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(14, 165, 233, 0.18), transparent 30%),
+      radial-gradient(circle at 80% 10%, rgba(245, 158, 11, 0.14), transparent 22%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+  }
+
+  .dark body {
+    background-image:
+      radial-gradient(circle at top left, rgba(34, 211, 238, 0.16), transparent 28%),
+      radial-gradient(circle at 80% 8%, rgba(251, 191, 36, 0.14), transparent 18%),
+      linear-gradient(180deg, rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.05));
+  }
+
+  input,
+  textarea,
+  select {
+    @apply outline-none;
+  }
+}
