@@ -5,7 +5,7 @@ WORKDIR /app
 ARG VITE_API_BASE_URL=/api/v1
 ENV VITE_API_BASE_URL=${VITE_API_BASE_URL}
 
-COPY frontend/package.json ./package.json
+COPY frontend/package*.json ./
 COPY frontend/tsconfig.json ./tsconfig.json
 COPY frontend/tsconfig.app.json ./tsconfig.app.json
 COPY frontend/tsconfig.node.json ./tsconfig.node.json
@@ -16,7 +16,8 @@ COPY frontend/index.html ./index.html
 COPY frontend/src ./src
 COPY frontend/public ./public
 
-RUN npm install
+RUN --mount=type=cache,target=/root/.npm \
+    if [ -f package-lock.json ]; then npm ci; else npm install; fi
 RUN npm run build
 
 FROM nginx:1.27-alpine

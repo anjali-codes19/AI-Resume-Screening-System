@@ -3,7 +3,7 @@ from __future__ import annotations
 from functools import lru_cache
 from pathlib import Path
 
-from pydantic import Field, field_validator
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -18,12 +18,8 @@ class Settings(BaseSettings):
     token_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 24
     database_url: str = "postgresql+psycopg://postgres:postgres@db:5432/resume_screening"
-    cors_origins: list[str] = Field(
-        default_factory=lambda: [
-            "http://localhost:3000",
-            "http://127.0.0.1:3000",
-            "http://localhost",
-        ]
+    cors_origins: str = (
+        "http://localhost:3000,http://127.0.0.1:3000,http://localhost"
     )
     uploads_dir: Path = BASE_DIR / "uploads"
     sentence_transformer_model: str = "sentence-transformers/all-MiniLM-L6-v2"
@@ -40,15 +36,19 @@ class Settings(BaseSettings):
 
     @field_validator("cors_origins", mode="before")
     @classmethod
-    def parse_cors_origins(cls, value: str | list[str]) -> list[str]:
-        if isinstance(value, str):
-            return [item.strip() for item in value.split(",") if item.strip()]
+    def normalize_cors_origins(cls, value: str | list[str]) -> str:
+        if isinstance(value, list):
+            return ",".join(item.strip() for item in value if item.strip())
         return value
 
     @field_validator("uploads_dir", mode="before")
     @classmethod
     def parse_uploads_dir(cls, value: str | Path) -> Path:
         return Path(value)
+
+    @property
+    def cors_origins_list(self) -> list[str]:
+        return [item.strip() for item in self.cors_origins.split(",") if item.strip()]
 
 
 @lru_cache

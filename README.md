@@ -78,7 +78,7 @@ TalentLens is a production-ready AI resume screening platform with separate cand
 cd backend
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 cp .env.example .env
 python scripts/seed_db.py
 uvicorn app.main:app --reload
@@ -104,6 +104,14 @@ Set `VITE_API_BASE_URL=http://localhost:8000/api/v1` when running the frontend o
 ```bash
 docker compose up --build
 ```
+
+The Docker setup is tuned for Apple Silicon local development:
+
+- Uses `linux/arm64` service platforms for macOS ARM64 Docker Desktop.
+- Installs CPU-only PyTorch from the official PyTorch CPU wheel index.
+- Keeps `sentence-transformers` available without pulling CUDA or NVIDIA packages.
+- Runs the backend with `uvicorn --reload` and bind mounts the FastAPI source for faster edit cycles.
+- Uses slimmer multi-stage images plus Docker layer caching for quicker rebuilds.
 
 Services:
 
@@ -156,3 +164,5 @@ The generated files are written to `backend/seed_assets/generated`.
 - The backend auto-creates tables on startup and seeds data when `SEED_DEFAULT_DATA=true`.
 - Sentence Transformer loading uses `local_files_only=True` so the app remains bootable in offline or restricted environments.
 - The AI scoring engine is intentionally hybrid: deterministic ATS heuristics plus semantic similarity when embeddings are available.
+- Docker installs PyTorch from `backend/requirements-docker.txt`, which points pip at the CPU-only wheel index for ARM64-safe local builds.
+- spaCy is pinned to a wheel-backed 3.8.x release so Linux ARM64 Docker builds avoid compiling spaCy from source on Apple Silicon.

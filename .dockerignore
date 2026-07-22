@@ -1,0 +1,15 @@
+.git
+.gitignore
+.agents
+.codex
+.DS_Store
+README.md
+backend/.venv
+backend/__pycache__
+backend/.pytest_cache
+backend/uploads
+backend/tests/test_resume_screening.db
+backend/seed_assets/generated
+frontend/node_modules
+frontend/dist
+postgres_data

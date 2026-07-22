@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 from datetime import UTC, datetime
 
 from fastapi import FastAPI, HTTPException, Request, status
@@ -27,6 +28,8 @@ def _payload(message: str, code: str) -> dict[str, str]:
 
 
 def register_exception_handlers(app: FastAPI) -> None:
+    logger = logging.getLogger(__name__)
+
     @app.exception_handler(ResourceConflictError)
     async def handle_conflict(_: Request, exc: ResourceConflictError) -> JSONResponse:
         return JSONResponse(
@@ -51,7 +54,8 @@ def register_exception_handlers(app: FastAPI) -> None:
 
     @app.exception_handler(Exception)
     async def handle_generic(_: Request, exc: Exception) -> JSONResponse:
+        logger.exception("Unhandled application error", exc_info=exc)
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            content=_payload(str(exc), "internal_server_error"),
+            content=_payload("An unexpected server error occurred", "internal_server_error"),
         )

@@ -7,6 +7,13 @@ from pydantic import BaseModel, ConfigDict, field_validator
 from app.db.models import UserRole
 
 
+def _validate_bcrypt_password(value: str) -> str:
+    password = value.strip()
+    if len(password.encode("utf-8")) > 72:
+        raise ValueError("Password must be 72 bytes or fewer for bcrypt compatibility")
+    return password
+
+
 class RegisterRequest(BaseModel):
     full_name: str
     email: str
@@ -30,7 +37,7 @@ class RegisterRequest(BaseModel):
     @field_validator("password")
     @classmethod
     def validate_password(cls, value: str) -> str:
-        password = value.strip()
+        password = _validate_bcrypt_password(value)
         if len(password) < 8:
             raise ValueError("Password must be at least 8 characters long")
         if password.lower() == password or password.upper() == password:
@@ -48,6 +55,11 @@ class LoginRequest(BaseModel):
     @classmethod
     def normalize_email(cls, value: str) -> str:
         return value.strip().lower()
+
+    @field_validator("password")
+    @classmethod
+    def validate_password(cls, value: str) -> str:
+        return _validate_bcrypt_password(value)
 
 
 class UserRead(BaseModel):
