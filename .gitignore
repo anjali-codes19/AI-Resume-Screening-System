@@ -15,3 +15,5 @@ backend/uploads/
 backend/tests/test_resume_screening.db
 frontend/.vite/
 postgres_data/
+
+backend/venv/
